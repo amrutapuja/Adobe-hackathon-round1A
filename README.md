@@ -1,15 +1,15 @@
 # Adobe Hackathon Round 1A – Intelligent PDF Outline Extractor
 
-## 🚀 Problem Statement
+## Problem Statement
 Extract a hierarchical outline (Title, H1-H3 headings with page numbers) from any PDF (≤ 50 pages) and generate a structured JSON.
 
-## 🧠 Approach
+## Approach
 We used **PyMuPDF** to:
 - Parse PDF structure
 - Analyze text blocks
 - Infer heading levels via **font size heuristics**
 
-## 📁 JSON Output Format
+## JSON Output Format
 ```json
 {
   "title": "Understanding AI",
@@ -21,7 +21,7 @@ We used **PyMuPDF** to:
 }
 ```
 
-## 🐳 Docker Instructions
+## Docker Instructions
 
 ### Build
 ```bash
@@ -36,11 +36,11 @@ docker run --rm \
   --network none adobe-solution:mytag
 ```
 
-## ✅ Constraints Satisfied
-- ⏱️ Runtime < 10 seconds
-- 🧠 Model size = 0 MB (no external model used)
-- 🚫 No internet calls
-- 💻 CPU-only, offline compatible
+## Constraints Satisfied
+- Runtime < 10 seconds
+- Model size = 0 MB (no external model used)
+- No internet calls
+- CPU-only, offline compatible
 
-## 📦 Dependencies
+## Dependencies
 - PyMuPDF
